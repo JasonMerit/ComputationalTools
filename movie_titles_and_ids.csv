@@ -1,0 +1,787 @@
+Name,ID
+The Shawshank Redemption,tt0111161
+The Godfather,tt0068646
+Pulp Fiction,tt0110912
+The Godfather Part II,tt0071562
+Inception,tt1375666
+The Lord of the Rings: The Return of the King,tt0167260
+Star Wars: Episode IV - A New Hope,tt0076759
+The Lord of the Rings: The Fellowship of the Ring,tt0120737
+The Matrix,tt0133093
+Seven,tt0114369
+Amélie,tt0211915
+Terminator 2: Judgment Day,tt0103064
+The Walking Dead,tt1520211
+Zombieland,tt1156398
+Shaun of the Dead,tt0365748
+I Am Legend,tt0480249
+The Crazies,tt0455407
+Grindhouse,tt0462322
+28 Days Later,tt0289043
+28 Weeks Later,tt0463854
+Resident Evil: Extinction,tt0432021
+Dawn of the Dead,tt0363547
+Resident Evil,tt0120804
+Planet Terror,tt1077258
+Army of Darkness,tt0106308
+Dead Snow,tt1278340
+Resident Evil: Apocalypse,tt0318627
+Doom,tt0419706
+Braindead,tt0103873
+Land of the Dead,tt0418819
+Dawn of the Dead,tt0077402
+Night of the Living Dead,tt0063350
+Quarantine,tt1082868
+Survival of the Dead,tt1134854
+Diary of the Dead,tt0848557
+Pet Sematary,tt0098084
+The Return of the Living Dead,tt0089907
+Day of the Dead,tt0489018
+Black Swan,tt0947798
+The Green Hornet,tt0990407
+xXx,tt0295701
+The Hangover,tt1119646
+Night of the Living Dead,tt0100258
+The Fast and the Furious: Tokyo Drift,tt0463985
+A Clockwork Orange,tt0066921
+Aliens,tt0090605
+Requiem for a Dream,tt0180093
+The Prestige,tt0482571
+Reservoir Dogs,tt0105236
+Back to the Future,tt0088763
+Monty Python and the Holy Grail,tt0071853
+The Green Mile,tt0120689
+Braveheart,tt0112573
+2001: A Space Odyssey,tt0062622
+Downfall,tt0363163
+Gladiator,tt0172495
+Inglourious Basterds,tt0361748
+Harry Potter and the Deathly Hallows: Part 1,tt0926084
+The Dark Knight,tt0468569
+The Mechanic,tt0472399
+The Social Network,tt1285016
+Avatar,tt0499549
+Scott Pilgrim vs. the World,tt0446029
+Kick-Ass,tt1250777
+Due Date,tt1231583
+The Other Guys,tt1386588
+Twilight,tt1099212
+Fight Club,tt0137523
+Batman Begins,tt0372784
+Die Hard,tt0095016
+Hotel Rwanda,tt0395169
+Heat,tt0113277
+Jaws,tt0073195
+Snatch,tt0208092
+No Country for Old Men,tt0477348
+The Lion King,tt0110357
+The Big Lebowski,tt0118715
+Donnie Darko,tt0246578
+Into the Wild,tt0758758
+The Sixth Sense,tt0167404
+District 9,tt1136608
+Gone with the Wind,tt0031381
+Kill Bill: Vol. 1,tt0266697
+Toy Story,tt0114709
+Scarface,tt0086250
+2 Fast 2 Furious,tt0322259
+The Departed,tt0407887
+Pirates of the Caribbean: The Curse of the Black Pearl,tt0325980
+Iron Man 2,tt1228705
+Machete,tt0985694
+The Expendables,tt1320253
+Salt,tt0944835
+The Sorcerer's Apprentice,tt0963966
+Alice in Wonderland,tt1014759
+Harry Potter and the Philosopher's Stone,tt0241527
+Grown Ups,tt1375670
+300,tt0416449
+The Wrestler,tt1125849
+Gandhi,tt0083987
+The Terminator,tt0088247
+Twelve Monkeys,tt0114746
+Good Will Hunting,tt0119217
+Let the Right One In,tt1139797
+The Exorcist,tt0070047
+Rocky,tt0075148
+Big Fish,tt0319061
+Beauty and the Beast,tt0101414
+Mystic River,tt0327056
+Shutter Island,tt1130884
+Buried,tt1462758
+The Bank Job,tt0200465
+Robin Hood,tt0955308
+Saving Private Ryan,tt0120815
+A Perfect Getaway,tt0971209
+Sherlock Holmes,tt0988045
+Sin City,tt0401792
+Harry Potter and the Half-Blood Prince,tt0417741
+Star Wars: Episode I - The Phantom Menace,tt0120915
+X-Men Origins: Wolverine,tt0458525
+Watchmen,tt0409459
+The Book of Eli,tt1037705
+Prince of Persia: The Sands of Time,tt0473075
+Shrek Forever After,tt0892791
+Predators,tt1424381
+Superbad,tt0829482
+American Pie,tt0163651
+Scream,tt0117571
+Star Wars: Episode V - The Empire Strikes Back,tt0080684
+Finding Nemo,tt0266543
+Love Actually,tt0314331
+The Incredible Hulk,tt0800080
+Harry Potter and the Goblet of Fire,tt0330373
+A Nightmare on Elm Street,tt1179056
+I Spit on Your Grave,tt1242432
+Troy,tt0332452
+Star Wars: Episode III - Revenge of the Sith,tt0121766
+Percy Jackson & the Lightning Thief,tt0814255
+Knocked Up,tt0478311
+Juno,tt0467406
+X-Men,tt0120903
+Zack and Miri Make a Porno,tt1007028
+Law Abiding Citizen,tt1197624
+American Psycho,tt0144084
+YPF,tt0913445
+X-Men: The Last Stand,tt0376994
+The Road,tt0898367
+Public Enemies,tt1152836
+Die Hard 4.0,tt0337978
+Wanted,tt0493464
+The Lord of the Rings: The Two Towers,tt0167261
+Forgetting Sarah Marshall,tt0800039
+The Pianist,tt0253474
+Tropic Thunder,tt0942385
+Death Race,tt0452608
+Alien,tt0078748
+The Last Airbender,tt0938283
+Stardust,tt0486655
+Day of the Dead,tt0088993
+Fido,tt0457572
+Wedding Crashers,tt0396269
+The Day the Earth Stood Still,tt0970416
+Star Wars: Episode VI - Return of the Jedi,tt0086190
+Jurassic Park,tt0107290
+Role Models,tt0430922
+The Curious Case of Benjamin Button,tt0421715
+The Boy in the Striped Pyjamas,tt0914798
+Harry Potter and the Chamber of Secrets,tt0295297
+Star Wars: Episode II - Attack of the Clones,tt0121765
+Million Dollar Baby,tt0405159
+The Devil Wears Prada,tt0458352
+The 40 Year-Old Virgin,tt0405422
+Tekken,tt0411951
+P.S. I Love You,tt0431308
+Paranormal Activity 2,tt1536044
+Gangs of New York,tt0217505
+The Bourne Identity,tt0258463
+Dear John,tt0989757
+Ghost Rider,tt0259324
+Catch Me If You Can,tt0264464
+Paranormal Activity,tt1179904
+Jumper,tt0489099
+Blow,tt0221027
+Hot Fuzz,tt0425112
+Hancock,tt0448157
+Case 39,tt0795351
+Conan the Barbarian,tt0082198
+Dumb and Dumber,tt0109686
+Sweeney Todd: The Demon Barber of Fleet Street,tt0408236
+National Treasure,tt0368891
+Daybreakers,tt0433362
+Shooter,tt0822854
+Mortal Kombat,tt0113855
+The Illusionist,tt0443543
+Spider-Man 2,tt0316654
+The Butterfly Effect,tt0289879
+Pearl Harbor,tt0213149
+Superman,tt0078346
+Batman,tt0096895
+Saw 3D,tt1477076
+Inside Man,tt0454848
+Return of the Living Dead: Part II,tt0095990
+Planet of the Apes,tt0133152
+The Bourne Supremacy,tt0372183
+Cloverfield,tt1060277
+Scream 3,tt0134084
+Orphan,tt1148204
+Angels & Demons,tt0808151
+Team America: World Police,tt0372588
+Scream 2,tt0120082
+Training Day,tt0139654
+Hitman,tt0465494
+Underworld,tt0320691
+Predator,tt0093773
+Shrek,tt0126029
+Running Scared,tt0404390
+The Dead Next Door,tt0094962
+Kill Bill: Vol. 2,tt0378194
+Saw,tt0387564
+From Dusk Till Dawn,tt0116367
+Zodiac,tt0443706
+Yes Man,tt1068680
+Fantastic Four,tt0120667
+The Matrix Reloaded,tt0234215
+The Italian Job,tt0317740
+Eagle Eye,tt1059786
+The Day After Tomorrow,tt0319262
+17 Again,tt0974661
+Man on Fire,tt0328107
+Lord of War,tt0399295
+Remember the Titans,tt0210945
+21,tt0478087
+Moulin Rouge!,tt0203009
+New Kids Turbo,tt1648112
+The Haunted Mansion,tt0338094
+X-Men 2,tt0290334
+The Da Vinci Code,tt0382625
+Ocean's Thirteen,tt0496806
+8 Mile,tt0298203
+Collateral,tt0369339
+The Chronicles of Riddick,tt0296572
+Perfume: The Story of a Murderer,tt0396171
+Get Smart,tt0425061
+Charlie and the Chocolate Factory,tt0367594
+National Treasure: Book of Secrets,tt0465234
+Starship Troopers,tt0120201
+The Devil's Advocate,tt0118971
+"I, Robot",tt0343818
+Scary Movie,tt0175142
+True Lies,tt0111503
+Twister,tt0117998
+Mulan,tt0120762
+Untraceable,tt0880578
+Transporter 2,tt0388482
+Rush Hour,tt0120812
+Saw VI,tt1233227
+Mad Max,tt0079501
+Final Destination 2,tt0309593
+Ghost Town,tt0995039
+Flightplan,tt0408790
+Street Kings,tt0421073
+Rambo,tt0462499
+Pet Sematary II,tt0105128
+A Knight's Tale,tt0183790
+The Ring,tt0298130
+Babel,tt0449467
+[Rec],tt1038988
+Alexander,tt0346491
+Not Another Teen Movie,tt0277371
+The Tournament,tt0471041
+The Last Samurai,tt0325710
+Underworld: Rise of the Lycans,tt0834001
+Hitch,tt0386588
+What Happens in Vegas,tt1033643
+Edward Scissorhands,tt0099487
+The Bucket List,tt0825232
+King Kong,tt0360717
+Fantastic 4: Rise of the Silver Surfer,tt0486576
+The Holiday,tt0457939
+Ocean's Twelve,tt0349903
+Terminator 3: Rise of the Machines,tt0181852
+War of the Worlds,tt0407304
+Munich,tt0408306
+Hulk,tt0286716
+Click,tt0389860
+Beowulf,tt0442933
+The Matrix Revolutions,tt0242653
+Batman Forever,tt0112462
+The Patriot,tt0187393
+The Transporter,tt0293662
+Bad Boys,tt0112442
+Green Street,tt0385002
+The Mist,tt0884328
+Friday the 13th,tt0758746
+The Godfather Part III,tt0099674
+Toy Story 2,tt0120363
+King Arthur,tt0349683
+Insomnia,tt0278504
+Crank,tt0479884
+Gone in Sixty Seconds,tt0187078
+50 First Dates,tt0343660
+Vanilla Sky,tt0259711
+The Perfect Storm,tt0177971
+Crank 2: High Voltage,tt1121931
+Blade,tt0120611
+You Don't Mess with the Zohan,tt0960144
+30 Days of Night,tt0389722
+Men in Black,tt0119654
+Step Up,tt0462590
+The Kingdom,tt0431197
+Van Wilder: Party Liaison,tt0283111
+The Box,tt0362478
+1408,tt0450385
+Transporter 3,tt1129442
+Total Recall,tt0100802
+Austin Powers: International Man of Mystery,tt0118655
+Legally Blonde,tt0250494
+Mission: Impossible III,tt0317919
+Meet the Fockers,tt0290002
+There's Something About Mary,tt0129387
+Natural Born Killers,tt0110632
+Austin Powers in Goldmember,tt0295178
+Eragon,tt0449010
+Apollo 13,tt0112384
+Be Cool,tt0377471
+Grease 2,tt0084021
+Dodgeball: A True Underdog Story,tt0364725
+Dogma,tt0120655
+Signs,tt0286106
+The Punisher,tt0330793
+Road Trip,tt0215129
+Bad Boys II,tt0172156
+The Prince & Me,tt0337697
+The Royal Tenenbaums,tt0265666
+Evan Almighty,tt0413099
+The Others,tt0230600
+The Golden Compass,tt0385752
+The Untouchables,tt0094226
+The Longest Yard,tt0398165
+Chocolat,tt0241303
+Donnie Brasco,tt0119008
+Notting Hill,tt0125439
+"10,000 BC",tt0443649
+Shrek the Third,tt0413267
+Finding Neverland,tt0308644
+The Orphanage,tt0464141
+Big Daddy,tt0142342
+A Series of Unfortunate Events,tt0339291
+The Strangers,tt0482606
+Alien Resurrection,tt0118583
+The Hitchhiker's Guide to the Galaxy,tt0371724
+The Final Destination,tt1144884
+Jackie Brown,tt0119396
+Anger Management,tt0305224
+A Man Apart,tt0266465
+Just Like Heaven,tt0425123
+The Hot Chick,tt0302640
+Batman & Robin,tt0118688
+Next,tt0435705
+Blade: Trinity,tt0359013
+Van Helsing,tt0338526
+American Pie 2,tt0252866
+Monster,tt0340855
+I Now Pronounce You Chuck & Larry,tt0762107
+American Pie: The Wedding,tt0328828
+Robin Hood: Prince of Thieves,tt0102798
+The Parent Trap,tt0120783
+Hostel,tt0450278
+The Hills Have Eyes,tt0454841
+The Last of the Mohicans,tt0104691
+Dragonball: Evolution,tt1098327
+The Amityville Horror,tt0384806
+The Simpsons Movie,tt0462538
+Batman Returns,tt0103776
+White Chicks,tt0381707
+Shrek 2,tt0298148
+Night at the Museum,tt0477347
+The Wedding Singer,tt0120888
+Bruce Almighty,tt0315327
+Spaceballs,tt0094012
+The International,tt0963178
+Die Hard: With a Vengeance,tt0112864
+Austin Powers: The Spy Who Shagged Me,tt0145660
+Desperado,tt0112851
+The Sweetest Thing,tt0253867
+Underworld: Evolution,tt0401855
+RoboCop,tt0093870
+The Mask,tt0110475
+Charlie's Angels,tt0160127
+Black Dynamite,tt1190536
+Men in Black II,tt0120912
+Antz,tt0120587
+World Trade Center,tt0469641
+Shallow Hal,tt0256380
+The Evil Dead,tt0083907
+Memoirs of a Geisha,tt0397535
+About a Boy,tt0276751
+Die Another Day,tt0246460
+The Lost World: Jurassic Park,tt0119567
+We Were Soldiers,tt0277434
+Mortal Kombat: Annihilation,tt0119707
+Madagascar: Escape 2 Africa,tt0479952
+Walking Tall,tt0351977
+Die Hard 2,tt0099423
+The Nightmare Before Christmas,tt0107688
+Stargate,tt0111282
+Bridget Jones's Diary,tt0243155
+From Hell,tt0120681
+Daredevil,tt0287978
+Lara Croft: Tomb Raider,tt0146316
+Mission: Impossible,tt0117060
+Jay and Silent Bob Strike Back,tt0261392
+The Terminal,tt0362227
+Along Came Polly,tt0343135
+The Devil's Rejects,tt0395584
+District 13: Ultimatum,tt1247640
+The Mummy Returns,tt0209163
+Alien³,tt0103644
+Mrs. Doubtfire,tt0107614
+The Dukes of Hazzard,tt0377818
+Clerks II,tt0424345
+The Abyss,tt0096754
+Scary Movie 2,tt0257106
+Mary Poppins,tt0058331
+Coach Carter,tt0393162
+Police Academy,tt0087928
+Cube,tt0123755
+Clerks,tt0109445
+Black Book,tt0389557
+Final Destination 3,tt0414982
+Corpse Bride,tt0121164
+The Texas Chainsaw Massacre,tt0324216
+Halloween,tt0077651
+What Lies Beneath,tt0161081
+Snakes on a Plane,tt0417148
+G-Force,tt0436339
+The Black Dahlia,tt0387877
+The World Is Not Enough,tt0143145
+Rat Race,tt0250687
+Final Destination,tt0195714
+Brüno,tt0889583
+Jurassic Park III,tt0163025
+Disaster Movie,tt1213644
+The Exorcism of Emily Rose,tt0404032
+The Skeleton Key,tt0397101
+Lethal Weapon,tt0093409
+"Dude, Where's My Car?",tt0242423
+Over the Hedge,tt0327084
+Cheaper by the Dozen,tt0349205
+13 Going on 30,tt0337563
+Planet of the Apes,tt0063442
+Jumanji,tt0113497
+Deep Impact,tt0120647
+Pocahontas,tt0114148
+Wild Hogs,tt0486946
+Alice in Wonderland,tt0043274
+Four Rooms,tt0113101
+The Ruins,tt0963794
+Happy Feet,tt0366548
+Mission: Impossible II,tt0120755
+Elf,tt0319343
+The Hills Have Eyes II,tt0800069
+What Women Want,tt0207201
+Winter in Wartime,tt0795441
+Dreamcatcher,tt0285531
+Epic Movie,tt0799949
+Gremlins,tt0087363
+Miss Congeniality,tt0212346
+John Q,tt0251160
+Spy Kids,tt0227538
+Saw II,tt0432348
+Did You Hear About the Morgans?,tt1314228
+DOA: Dead or Alive,tt0398913
+Catwoman,tt0327554
+Scary Movie 3,tt0306047
+Freaky Friday,tt0322330
+Beverly Hills Cop,tt0086960
+AVPR: Aliens vs Predator - Requiem,tt0758730
+Tomorrow Never Dies,tt0120347
+AVP: Alien vs. Predator,tt0370263
+What a Girl Wants,tt0286788
+Evil Dead II,tt0092991
+My Bloody Valentine,tt1179891
+Passengers,tt0449487
+I Know What You Did Last Summer,tt0119345
+The Texas Chainsaw Massacre: The Beginning,tt0420294
+Paycheck,tt0338337
+Starsky & Hutch,tt0335438
+The Princess Diaries 2,tt0368933
+Mad Max 2,tt0082694
+Tarzan,tt0120855
+Miami Vice,tt0430357
+Shark Tale,tt0307453
+The Time Machine,tt0268695
+The Grudge,tt0391198
+Freddy vs. Jason,tt0329101
+Behind Enemy Lines,tt0159273
+Saw V,tt1132626
+Runaway Jury,tt0313542
+The Eye,tt0406759
+Romeo Must Die,tt0165929
+Rules of Engagement,tt0160797
+Analyze That,tt0289848
+Get Carter,tt0208988
+Freddy Got Fingered,tt0240515
+Transformers,tt0418279
+Hostel: Part II,tt0498353
+Beerfest,tt0486551
+The Condemned,tt0443473
+Predator 2,tt0100403
+How the Grinch Stole Christmas,tt0170016
+The Wicker Man,tt0450345
+Assault on Precinct 13,tt0398712
+Robots,tt0358082
+Mr. Deeds,tt0280590
+Superhero Movie,tt0426592
+Lilo & Stitch,tt0275847
+Saw IV,tt0890870
+40 Days and 40 Nights,tt0243736
+Rambo: First Blood Part II,tt0089880
+Enter the Dragon,tt0070034
+The Addams Family,tt0101272
+The Spiderwick Chronicles,tt0416236
+Elektra,tt0357277
+8MM,tt0134273
+Æon Flux,tt0402022
+Joy Ride,tt0206314
+Space Jam,tt0117705
+Goldfinger,tt0058150
+How High,tt0278488
+Home Alone 2: Lost in New York,tt0104431
+Flash Gordon,tt0080745
+The Naked Gun: From the Files of Police Squad!,tt0095705
+Conan the Destroyer,tt0087078
+Semi-Pro,tt0839980
+Ghostbusters II,tt0097428
+Deep Blue Sea,tt0149261
+Surf's Up,tt0423294
+My Sassy Girl,tt0404254
+In Her Shoes,tt0388125
+The X Files: I Want to Believe,tt0443701
+Evolution,tt0251075
+Dr. No,tt0055928
+"You, Me and Dupree",tt0463034
+The Wedding Planner,tt0209475
+Nanny McPhee,tt0396752
+Thir13en Ghosts,tt0245674
+Lara Croft: Tomb Raider - The Cradle of Life,tt0325703
+Gothika,tt0348836
+Mr. Bean's Holiday,tt0453451
+Fun with Dick and Jane,tt0369441
+Psycho,tt0155975
+The Polar Express,tt0338348
+Rambo III,tt0095956
+Friday the 13th,tt0080761
+The Rookie,tt0265662
+Universal Soldier,tt0105698
+The Family Man,tt0218967
+Bad Santa,tt0307987
+Che: Part One,tt0892255
+Rampage,tt1337057
+The Long Kiss Goodnight,tt0116908
+The Hunchback of Notre Dame,tt0116583
+Hide and Seek,tt0382077
+101 Dalmatians,tt0115433
+Analyze This,tt0122933
+Under Siege,tt0105690
+Wayne's World 2,tt0108525
+Good Bye Lenin!,tt0301357
+Bedazzled,tt0230030
+Final Fantasy: The Spirits Within,tt0173840
+Live and Let Die,tt0070328
+A View to a Kill,tt0090264
+Two for the Money,tt0417217
+Flight of the Phoenix,tt0377062
+Sister Act 2: Back in the Habit,tt0108147
+Johnny English,tt0274166
+Post Grad,tt1142433
+Kingpin,tt0116778
+Super Mario Bros.,tt0108255
+The Whole Ten Yards,tt0327247
+Peter Pan,tt0046183
+Windtalkers,tt0245562
+Final Fantasy VII: Advent Children,tt0385700
+Stuart Little,tt0164912
+Jeepers Creepers,tt0263488
+Deuce Bigalow: Male Gigolo,tt0205000
+Knockaround Guys,tt0211465
+The Messengers,tt0425430
+Cool Runnings,tt0106611
+Norbit,tt0477051
+Open Season 2,tt1107365
+Far Cry,tt0400426
+Lethal Weapon 2,tt0097733
+Moonraker,tt0079574
+Never Say Never Again,tt0086006
+Goal!,tt0380389
+Ali G Indahouse,tt0284837
+Dinosaur,tt0130623
+Alone in the Dark,tt0369226
+Pinocchio,tt0032910
+Stan Helsing,tt1185266
+Big Momma's House,tt0208003
+Conspiracy Theory,tt0118883
+Naked Gun 33 1/3: The Final Insult,tt0110622
+Octopussy,tt0086034
+Torque,tt0329691
+Jaws: The Revenge,tt0093300
+Home Alone 3,tt0119303
+He Got Game,tt0124718
+Shaft,tt0162650
+Babe,tt0112431
+The Gift,tt0219699
+Cheaper by the Dozen 2,tt0452598
+The Texas Chain Saw Massacre,tt0072271
+Looney Tunes: Back in Action,tt0318155
+The Reaping,tt0444682
+The Ring 2,tt0377109
+Collateral Damage,tt0233469
+The Longest Day,tt0056197
+The SpongeBob SquarePants Movie,tt0345950
+Raise Your Voice,tt0361696
+The Naked Gun 2½: The Smell of Fear,tt0102510
+White Men Can't Jump,tt0105812
+Mindhunters,tt0297284
+The Forgotten,tt0356618
+Monster House,tt0385880
+Resident Evil: Degeneration,tt1174954
+Police Academy 4: Citizens on Patrol,tt0093756
+Street Fighter,tt0111301
+Bride & Prejudice,tt0361411
+About Schmidt,tt0257360
+Employee of the Month,tt0424993
+Brother Bear,tt0328880
+Dumbo,tt0033563
+The Karate Kid Part II,tt0091326
+Kiss of the Dragon,tt0271027
+Crocodile Dundee,tt0090555
+Escape from L.A.,tt0116225
+Joan of Arc,tt0151137
+The Fox and the Hound,tt0082406
+Bandidas,tt0416496
+Big Momma's House 2,tt0421729
+Lethal Weapon 3,tt0104714
+Escape from Alcatraz,tt0079116
+Deuce Bigalow: European Gigolo,tt0367652
+Taxi,tt0152930
+Black Sheep,tt0779982
+Imagine That,tt0780567
+Over Her Dead Body,tt0785007
+Mad Max Beyond Thunderdome,tt0089530
+Coneheads,tt0106598
+Lady and the Tramp,tt0048280
+The Butterfly Effect 3: Revelations,tt1234541
+Charlotte's Web,tt0413895
+The Butterfly Effect 2,tt0457297
+Jaws 2,tt0077766
+Glory Road,tt0385726
+Scooby-Doo 2: Monsters Unleashed,tt0331632
+RoboCop 2,tt0100502
+Mean Machine,tt0291341
+Don't Say a Word,tt0260866
+Garfield: The Movie,tt0356634
+Small Soldiers,tt0122718
+Taxi,tt0316732
+Femme Fatale,tt0280665
+Daddy Day Care,tt0317303
+Blue Streak,tt0181316
+The Cat in the Hat,tt0312528
+Cats & Dogs,tt0239395
+Baise-moi,tt0249380
+Beverly Hills Cop II,tt0092644
+Dragonfly,tt0259288
+Captivity,tt0374563
+Bride of Chucky,tt0144120
+Cube 2: Hypercube,tt0285492
+Ginger Snaps,tt0210070
+Strange Wilderness,tt0489282
+The Hunted,tt0269347
+Ladder 49,tt0349710
+Bulletproof Monk,tt0245803
+Bean,tt0118689
+Jason X,tt0211443
+Cocoon,tt0088933
+National Security,tt0271668
+The Grudge 2,tt0433386
+I Spy,tt0297181
+Bubble Boy,tt0258470
+Changing Lanes,tt0264472
+Stuck on You,tt0338466
+Spirit: Stallion of the Cimarron,tt0166813
+Show Me Love,tt0150662
+Beverly Hills Ninja,tt0118708
+Dragon Wars,tt0372873
+George of the Jungle,tt0119190
+White Noise,tt0375210
+Beethoven,tt0103786
+Herbie Fully Loaded,tt0400497
+A Nightmare on Elm Street 3: Dream Warriors,tt0093629
+Seed of Chucky,tt0387575
+Bratz,tt0804452
+Biker Boyz,tt0326769
+Exorcist: The Beginning,tt0204313
+Dennis the Menace,tt0106701
+Boat Trip,tt0285462
+Ri¢hie Ri¢h,tt0110989
+Jesus Christ Superstar,tt0070239
+Eight Legged Freaks,tt0271367
+The Nutty Professor,tt0117218
+Swimfan,tt0283026
+A Goofy Movie,tt0113198
+Goal II: Living the Dream,tt0473360
+Like Mike,tt0308506
+"Legally Blonde 2: Red, White & Blonde",tt0333780
+The Karate Kid Part III,tt0097647
+Beverly Hills Cop III,tt0109254
+Doctor Dolittle,tt0118998
+Jingle All The Way,tt0116705
+Jeepers Creepers 2,tt0301470
+Bowfinger,tt0131325
+Spy Kids 2: Island of Lost Dreams,tt0287717
+The Tuxedo,tt0290095
+Asterix & Obelix: Mission Cleopatra,tt0250223
+Open Water,tt0374102
+The Great Mouse Detective,tt0091149
+RoboCop 3,tt0107978
+Ravenous,tt0129332
+The Animatrix,tt0328832
+Mr. Woodcock,tt0419984
+The Grudge 3,tt1053859
+Speed 2: Cruise Control,tt0120179
+Gremlins 2: The New Batch,tt0099700
+A Nightmare on Elm Street Part 2: Freddy's Revenge,tt0089686
+Dance of the Dead,tt0926063
+The Deaths of Ian Stone,tt0810823
+Volcano,tt0120461
+Police Academy 2: Their First Assignment,tt0089822
+Wes Craven's New Nightmare,tt0111686
+The Santa Clause,tt0111070
+Black Knight,tt0265087
+Forrest Gump,tt0109830
+Titanic,tt0120338
+Memento,tt0209144
+American History X,tt0120586
+V for Vendetta,tt0434409
+GoodFellas,tt0099685
+Iron Man,tt0371746
+Casino Royale,tt0381061
+Spider-Man,tt0145487
+Pirates of the Caribbean: Dead Man's Chest,tt0383574
+Independence Day,tt0116629
+Ocean's Eleven,tt0240772
+Pirates of the Caribbean: At World's End,tt0449088
+Armageddon,tt0120591
+Harry Potter and the Prisoner of Azkaban,tt0304141
+Harry Potter and the Order of the Phoenix,tt0373889
+E.T. the Extra-Terrestrial,tt0083866
+Mr. & Mrs. Smith,tt0356910
+"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",tt0363771
+Black Hawk Down,tt0265086
+Life of Brian,tt0079470
+The Mummy,tt0120616
+Quantum of Solace,tt0830515
+Meet the Parents,tt0212338
+The Aviator,tt0338751
+2012,tt1190080
+The Passion of the Christ,tt0335345
+Ghostbusters,tt0087332
+Home Alone,tt0099785
+Kingdom of Heaven,tt0320661
+Speed,tt0111257
+The Thing,tt0084787
+Pineapple Express,tt0910936
+Constantine,tt0360486
+Back to the Future Part III,tt0099088
+Chicago,tt0299658
+Death Proof,tt1028528
+Ice Age,tt0268380
+"South Park: Bigger, Longer & Uncut",tt0158983
+Street Fighter: The Legend of Chun-Li,tt0891592
+Martyrs,tt1029234
+G.I. Joe: The Rise of Cobra,tt1046173
+Terminator Salvation,tt0438488
+Spider-Man 3,tt0413300
+Loft,tt1606789
+The Descent,tt0435625
+The Descent: Part 2,tt1073105
