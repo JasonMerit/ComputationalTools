@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import time
 import csv
+import pandas as pd
 
 headers = {'user-agent': 'my-app/0.0.1', 'Accept-Language': 'en-US,en;q=0.5'}
 
@@ -84,12 +85,17 @@ def scrape_movies(ids, debug=False, save=True):
 if __name__ == '__main__':
     # ids = ['tt0111161','tt0068646']
     # ids = ['tt0111161','tt0068646','tt0110912','tt0071562','tt1375666','tt0167260','tt0076759','tt0120737','tt0133093','tt0114369','tt0211915','tt0103064','tt1520211','tt1156398','tt0365748','tt0480249','tt0455407','tt0462322','tt0289043','tt0463854','tt0432021','tt0363547','tt0120804', 'tt1077258']
-    # scrape_movies(ids, False, 1)
+    titles = pd.read_csv('Project/data/movies_786.csv')
+    ids = titles['ID']
+    scrape_movies(ids, False, 1)
+
+    # Get IDs from movies_786
+    
 
     # Creater counter spanning from 0000001 to 9999999
     # Last point of failure: tt0000001
-    with open('Project/data/movies_metrics_fails.txt', 'r') as f:
-        last_failure = int(f.read().splitlines()[-1][2:])
-    print(last_failure)
-    ids = (f'tt{i:07d}' for i in range(last_failure, 10000000))
-    scrape_movies(ids)
+    # with open('Project/data/movies_metrics_fails.txt', 'r') as f:
+    #     last_failure = int(f.read().splitlines()[-1][2:])
+    # print(last_failure)
+    # ids = (f'tt{i:07d}' for i in range(last_failure, 10000000))
+    # scrape_movies(ids)
