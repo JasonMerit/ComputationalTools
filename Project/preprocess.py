@@ -79,10 +79,13 @@ def tokenize_movie_descriptions(org_movies):
         des = [word for word in des if word and word not in stop_words]
 
         # Lemmatization of words in description
-        des = [lemmatizer.lemmatize(w) for w in des]
+        des = [lemmatizer.lemmatize(w) for w in des if w not in stop_words]
 
         # Last clean up
         des = [token for token in des if token]
+
+        # reformat the list of tokens to match the expected input format of TfidfVectorizer()
+        #des = [" ".join(token) for token in des]
 
         # Update the dataset with tokenized descriptions
         movies['Description'][i] = des
@@ -108,15 +111,15 @@ def split_rating(org_movies):
     matches = movies['Rating'].str.extract(pattern)
 
     # Convert rating value to float
-    movies['Rating_value'] = matches[0].astype(float)
+    movies['Rating'] = matches[0].astype(float)
 
     # Process votes: Convert 'K' to 1,000 and 'M' to 1,000,000
     votes = matches[1].astype(float)
     multiplier = matches[2].map({'K': 1_000, 'M': 1_000_000})
-    movies['votes'] = votes * multiplier
+    movies['Popularity'] = votes * multiplier
 
     # Keep only rows where 'Rating' matched the regex
-    movies = movies.dropna(subset=['Rating_value', 'votes'])
+    movies = movies.dropna(subset=['Rating', 'Popularity'])
 
     # Reset the index
     movies.reset_index(drop=True, inplace=True)
