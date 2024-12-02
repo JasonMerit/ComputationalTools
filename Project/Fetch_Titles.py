@@ -35,16 +35,20 @@ def get_movie_detail(details, num_2):
     year_pattern = re.compile(r"^\d{4}$|^\d{4}–\d{4}$")  # Matches a single year or a year range (e.g., 2010 or 2010–2022)
     length_pattern = re.compile(r"^\d+h \d+m$|^\d+h$|^\d+m$|^\d+ eps$")  # Matches "Xh Ym" format or "X eps"
     age_pattern = re.compile(
-        r"^\d{1,2}$|^PG-?\d{0,2}$|^X$|^12A$|^U$|^18$|^NR$|^R$|^AA$|^G$|^NC-17$|^M$|^MA$|^T$|^L$|^K-7$|^K-12$|^A$|^S$|^TV-MA$"
+        r"^\d{1,2}$|^PG-?\d{0,2}$|^X$|^12A$|^U$|^18$|^NR$|^R$|^AA$|^G$|^NC-17$|^M$|^MA$|^T$|^L$|^K-7$|^K-12$|^A$|^S$|^TV-MA$|^TV-PG$|^TV-Y7-FV$"
     )  # Age rating can be like "18", "PG", "PG-13", "12A", "X", "U" and "TV-MA"
 
     # Default values
     year, length, age = "N/A", "N/A", "N/A"
 
+
     # Check year
     if num_2 < len(details) and year_pattern.match(details[num_2].text):
         year = details[num_2].text
         num_2 += 1
+    elif  num_2 < len(details) and year_pattern.match(details[num_2 + 1].text):
+        year = details[num_2].text
+        num_2 += 2
 
     # Check length
     if num_2 < len(details) and length_pattern.match(details[num_2].text):
@@ -59,13 +63,23 @@ def get_movie_detail(details, num_2):
     return year, length, age, num_2
 
 
-def fetch_titles(target_movie = 2000):
+def fetch_titles(target_movie = 10000):
     # Save movie and ID in dictionary
     titles = {}
 
-    # Links to different IMDB movie lits
-    urls = ['https://www.imdb.com/list/ls000634294/', 'https://www.imdb.com/list/ls002448041/',
-            'https://www.imdb.com/list/ls050782187/']
+    # Links to different IMDB movie lits mostly seperated by genre
+    urls = ['https://www.imdb.com/list/ls000634294/', 'https://www.imdb.com/list/ls050782187/',
+            'https://www.imdb.com/list/ls059633855/', 'https://www.imdb.com/list/ls074612774/',
+            'https://www.imdb.com/list/ls066207865/', 'https://www.imdb.com/list/ls092264063/',
+            'https://www.imdb.com/list/ls058416162/', 'https://www.imdb.com/list/ls063897780/',
+            'https://www.imdb.com/list/ls058726648/', 'https://www.imdb.com/list/ls000712763/',
+            'https://www.imdb.com/list/ls072723591/', 'https://www.imdb.com/list/ls072723351/',
+            'https://www.imdb.com/list/ls063361223/', 'https://www.imdb.com/list/ls044085335/',
+            'https://www.imdb.com/list/ls044085335/', 'https://www.imdb.com/list/ls025833831/',
+            'https://www.imdb.com/list/ls066980750/', 'https://www.imdb.com/list/ls072723203/',
+            'https://www.imdb.com/list/ls062101934/', 'https://www.imdb.com/list/ls063397905/',
+            'https://www.imdb.com/list/ls062913334/', 'https://www.imdb.com/list/ls062152451/',
+            'https://www.imdb.com/list/ls027351811/', 'https://www.imdb.com/list/ls057336010/']
 
     # Webscrape one site at a time:
     for url in urls:
@@ -109,7 +123,15 @@ def fetch_titles(target_movie = 2000):
             if(title.text == "More to explore"):
                 break
 
-            movie_name = re.search(title_pattern, title.text).group(1)
+            #movie_name = re.search(title_pattern, title.text).group(1)
+            match = re.search(title_pattern, title.text)
+
+            if match:
+                movie_name = match.group(1)  # Extract movie name
+            else:
+                movie_name = "Unknown Title"  # Default to a fallback title
+                print(f"Warning: No match found for title text: {title.text}")  # Debugging line
+
             link = web.find_element('partial link text', title.text).get_attribute("href")
 
             # Pull the ID out:
@@ -167,7 +189,7 @@ def fetch_movie_details(movie):
     """
     Scrapes movie details from multiple IMDb lists and compiles the data into a pandas DataFrame.
 
-    * Code ran for 875 sec to get 1682 titles *
+    * Code ran for 1613 sec to get 3123 titles *
 
     This function automates the process of:
     - Visiting IMDb movie list pages.
@@ -211,7 +233,7 @@ def fetch_movie_details(movie):
 
     try:
         # Wait for genre elements to be present
-        WebDriverWait(web, 15).until(
+        WebDriverWait(web, 20).until(
             EC.presence_of_all_elements_located(('xpath', "//a[@class='ipc-chip ipc-chip--on-baseAlt']/span"))
         )
 
@@ -224,7 +246,7 @@ def fetch_movie_details(movie):
 
     try:
         # Wait for director elements to be present
-        WebDriverWait(web, 15).until(
+        WebDriverWait(web, 20).until(
             EC.presence_of_all_elements_located(
                 ('xpath', "//li[@data-testid='title-pc-principal-credit']//a"))
         )
@@ -238,7 +260,7 @@ def fetch_movie_details(movie):
 
     try:
         # Extract stars
-        WebDriverWait(web, 15).until(
+        WebDriverWait(web, 20).until(
             EC.presence_of_all_elements_located(('xpath', "//li[@data-testid='title-pc-principal-credit']//a"))
         )
         star_elements = web.find_elements('xpath', "//li[@data-testid='title-pc-principal-credit']//a")
@@ -258,13 +280,18 @@ def fetch_movie_details(movie):
 
     return genres, directors, stars
 
-
+def safe_fetch_movie_details(movie_id):
+    try:
+        return fetch_movie_details(movie_id)
+    except Exception as e:
+        print(f"Error processing ID {movie_id}: {e}")
+        return None  # Return None or any placeholder to indicate failure
 
 def get_genre_n_production(movies):
     """
     * Code functions but could use a clean up *
 
-    * Ran for 2283 sec for 1682 titles *
+    * Ran for 4783 sec for 3064 titles *
 
     Scrapes additional details (genres, directors, and stars) for a given movie from its IMDb page.
 
@@ -295,7 +322,10 @@ def get_genre_n_production(movies):
     # ThreadPoolExecutor for parallel processing to webscape 10 websites at a time
     with ThreadPoolExecutor(max_workers=10) as executor:
         # Fetch genres for all the movies
-        results = list(executor.map(fetch_movie_details, movies_to_process['ID']))
+        try:
+            results = list(executor.map(safe_fetch_movie_details, movies_to_process['ID']))
+        except:
+            print("error")
 
     # Extract genres, directors, and stars from the results
     genres = [result[0] for result in results]

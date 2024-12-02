@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6bd46dc-1a0b-4f0d-86f8-6a16e69fccf5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Project/TF_IDF.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/clustering.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Clean_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/preprocess.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/Fetch_Titles.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Fetch_Titles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/movie_titles_and_ids.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Project/movie_titles_and_ids.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/movies.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/movies_with_genres.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Project/movies_with_genres.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
