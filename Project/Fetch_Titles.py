@@ -64,13 +64,52 @@ def get_movie_detail(details, num_2):
 
 
 def fetch_titles(target_movie = 10000):
+    """
+    Scrapes movie details from multiple IMDb lists and compiles the data into a pandas DataFrame.
+
+    * Code ran for 1613 sec to get 3123 titles *
+
+    This function automates the process of:
+    - Visiting IMDb movie list pages.
+    - Loading all titles of the movie list by scrolling to the bottom of the page.
+    - Using the hyperlink of the movies to get the unique IMDb movie ID.
+    - Extracting movie details such as title, description, year, length, age restriction, and rating.
+    - Storing the collected data in a dictionary mapped by IMDb movie IDs.
+    - Saving the final data as a CSV file for further use.
+
+    Key Steps:
+    1. **Scraping Titles and Metadata:** The function navigates through IMDb list URLs, scrolling down the pages to load all movie entries.
+    2. **Extracting Data:** Using regex and XPath, it extracts:
+        - Title
+        - IMDb ID
+        - Description
+        - Year
+        - Length
+        - Age restriction
+        - IMDb rating and vote count
+    3. **Avoiding Duplicate Entries:** Ensures movies with the same IMDb ID are not duplicated.
+    4. **Early Stopping:** Stops the scraping process once the target number of movies (`target_movie`) is reached.
+    5. **Data Organization:** Converts the collected data into a pandas DataFrame and saves it to a CSV file.
+
+    Parameters:
+        target_movie (int): The number of movies to scrape before stopping (default is 10000).
+
+    Returns:
+        None: Saves the resulting dataset as a CSV file named 'movie_titles_and_ids.csv'.
+
+    Notes:
+    - The function handles pop-ups and dynamically loads additional content by scrolling.
+    - Requires the `get_movie_detail()` helper function for extracting year, length, and age restriction from metadata.
+    - Uses Selenium with Chrome WebDriver; ensure the WebDriver is installed and configured properly.
+    """
+
     # Save movie and ID in dictionary
     titles = {}
 
-    # Links to different IMDB movie lits mostly seperated by genre
+    # Links to different IMDB movie lists mostly seperated by genre
     urls = ['https://www.imdb.com/list/ls000634294/', 'https://www.imdb.com/list/ls050782187/',
             'https://www.imdb.com/list/ls059633855/', 'https://www.imdb.com/list/ls074612774/',
-            'https://www.imdb.com/list/ls066207865/', 'https://www.imdb.com/list/ls092264063/',
+            'https://www.imdb.com/list/ls066207865/',
             'https://www.imdb.com/list/ls058416162/', 'https://www.imdb.com/list/ls063897780/',
             'https://www.imdb.com/list/ls058726648/', 'https://www.imdb.com/list/ls000712763/',
             'https://www.imdb.com/list/ls072723591/', 'https://www.imdb.com/list/ls072723351/',
@@ -80,6 +119,8 @@ def fetch_titles(target_movie = 10000):
             'https://www.imdb.com/list/ls062101934/', 'https://www.imdb.com/list/ls063397905/',
             'https://www.imdb.com/list/ls062913334/', 'https://www.imdb.com/list/ls062152451/',
             'https://www.imdb.com/list/ls027351811/', 'https://www.imdb.com/list/ls057336010/']
+
+    # Removed - 'https://www.imdb.com/list/ls092264063/'
 
     # Webscrape one site at a time:
     for url in urls:
@@ -187,39 +228,28 @@ def fetch_titles(target_movie = 10000):
 
 def fetch_movie_details(movie):
     """
-    Scrapes movie details from multiple IMDb lists and compiles the data into a pandas DataFrame.
+    Scrapes genres, directors, and stars from an IMDb movie page using its movie ID.
 
-    * Code ran for 1613 sec to get 3123 titles *
+    This function navigates to the IMDb page for a given movie ID and extracts:
+    - **Genres:** A list of genres associated with the movie.
+    - **Directors:** A list of directors associated with the movie.
+    - **Stars:** A list of main cast members (stars) for the movie.
 
-    This function automates the process of:
-    - Visiting IMDb movie list pages.
-    - Extracting movie details such as title, description, year, length, age restriction, and rating.
-    - Storing the collected data in a dictionary mapped by IMDb movie IDs.
-    - Saving the final data as a CSV file for further use.
-
-    Key Steps:
-    1. **Scraping Titles and Metadata:** The function navigates through IMDb list URLs, scrolling down the pages to load all movie entries.
-    2. **Extracting Data:** Using regex and XPath, it extracts:
-        - Title
-        - Description
-        - Year
-        - Length
-        - Age restriction
-        - IMDb rating and vote count
-    3. **Avoiding Duplicate Entries:** Ensures movies with the same IMDb ID are not duplicated.
-    4. **Early Stopping:** Stops the scraping process once the target number of movies (`target_movie`) is reached.
-    5. **Data Organization:** Converts the collected data into a pandas DataFrame and saves it to a CSV file.
+    Process:
+    - Constructs the IMDb movie URL from the provided movie ID.
+    - Uses Selenium to open the movie page and waits for the relevant elements (genres, directors, stars) to load.
+    - Extracts the genres, directors, and stars using XPath.
+    - Cleans the stars list by removing irrelevant entries such as "Stars" or empty strings.
+    - Handles any errors prints error messages if any elements are not found.
 
     Parameters:
-        target_movie (int): The number of movies to scrape before stopping (default is 2000).
+        movie (str): The IMDb ID of the movie (e.g., "tt1234567").
 
     Returns:
-        None: Saves the resulting dataset as a CSV file named 'movie_titles_and_ids.csv'.
-
-    Notes:
-    - The function handles pop-ups and dynamically loads additional content by scrolling.
-    - Requires the `get_movie_detail()` helper function for extracting year, length, and age restriction from metadata.
-    - Uses Selenium with Chrome WebDriver; ensure the WebDriver is installed and configured properly.
+        tuple: A tuple containing three lists:
+            - `genres` (list): The genres of the movie.
+            - `directors` (list): The directors of the movie.
+            - `stars` (list): The stars (cast) of the movie.
     """
 
     # Movie title (ID)
@@ -281,6 +311,18 @@ def fetch_movie_details(movie):
     return genres, directors, stars
 
 def safe_fetch_movie_details(movie_id):
+    """
+    Attempts to fetch movie details for a given IMDb ID, with error handling.
+
+    This function wraps `fetch_movie_details` in a try-except block. If an error occurs (e.g., couldn't load due to network issues),
+    it logs the error and returns `None` to indicate failure.
+
+    Parameters:
+        movie_id (str): The IMDb ID of the movie (e.g., "tt1234567").
+
+    Returns:
+        result (varied): The result from `fetch_movie_details` if successful, or `None` if an error occurs.
+    """
     try:
         return fetch_movie_details(movie_id)
     except Exception as e:
@@ -289,32 +331,36 @@ def safe_fetch_movie_details(movie_id):
 
 def get_genre_n_production(movies):
     """
-    * Code functions but could use a clean up *
+    Scrapes additional movie details, including genres, directors, and stars, for a given set of IMDb movie IDs.
 
-    * Ran for 4783 sec for 3064 titles *
-
-    Scrapes additional details (genres, directors, and stars) for a given movie from its IMDb page.
-
-    This function automates the process of visiting an IMDb movie page using its ID, extracting:
-    - **Genres:** A list of genres associated with the movie.
-    - **Directors:** A list of directors, filtered to include only relevant links.
-    - **Stars:** A list of stars (cast), cleaned to exclude irrelevant entries.
+    This function automates the process of visiting individual IMDb movie pages and extracting:
+    - **Genres:** A list of genres associated with each movie.
+    - **Directors:** A list of directors associated with each movie, filtered to exclude irrelevant links.
+    - **Stars:** A list of main cast members, cleaned to exclude irrelevant or placeholder entries.
 
     Process:
-    - Opens the movie's IMDb page using Selenium's Chrome WebDriver.
-    - Waits for the necessary elements (genres, directors, and stars) to load using explicit waits.
-    - Extracts text data from specific HTML elements identified by their XPath.
-    - Handles errors gracefully if any elements are not found or time out.
-    - Closes the browser after scraping.
+    - Creates a copy of the input `movies` DataFrame to avoid modifying the original data.
+    - Uses `ThreadPoolExecutor` for parallel scraping, processing up to 10 movies at once.
+    - Fetches the IMDb page for each movie by ID using the `safe_fetch_movie_details` function.
+    - Extracts genres, directors, and stars from the IMDb pages using XPath and cleans the results by removing empty strings or unwanted entries.
+    - Adds the extracted details (genres, directors, and stars) as new columns to the `movies` DataFrame.
+    - Saves the updated DataFrame to a CSV file named `movies_with_genres.csv`.
 
     Parameters:
-        movie (str): The IMDb ID of the movie (e.g., "tt1234567").
+        movies (pandas.DataFrame): A DataFrame containing movie IDs (IMDB ID column must be named 'ID').
 
     Returns:
-        tuple: A tuple containing three lists:
-            - `genres` (list): The genres of the movie.
-            - `directors` (list): The directors of the movie.
-            - `stars` (list): The stars (cast) of the movie.
+        None: Updates the DataFrame with additional columns and saves it to a CSV file.
+
+    Notes:
+    - The function uses `ThreadPoolExecutor` to speed up the scraping process by parallelizing the fetching of movie details.
+    - `safe_fetch_movie_details` should handle error cases, such as missing or timeout elements, and return safe default values for missing data.
+    - Requires a working setup of Selenium and `safe_fetch_movie_details` for scraping individual IMDb pages.
+    - The function handles errors gracefully if any expected elements (genres, directors, or stars) are not found during scraping.
+
+    * Code functions but could use a clean-up *
+
+     * Ran for 4783 sec for 3064 titles *
     """
     # Creating a copy of the original DataFrame to avoid modifying it directly
     movies_to_process = movies.copy()
